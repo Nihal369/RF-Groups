@@ -1,0 +1,168 @@
+.hero {
+  background: 
+    url('/images/rf.jpeg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  position: relative;
+}
+
+/* Alternative background options - you can use any of these */
+/* Option 1: Simple background image */
+/* .hero {
+  background: url('/images/hero-background.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  position: relative;
+} */
+
+/* Option 2: Dark overlay */
+/* .hero {
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('/images/hero-background.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  position: relative;
+} */
+
+/* Option 3: Gradient overlay matching brand colors */
+/* .hero {
+  background: 
+    linear-gradient(
+      135deg,
+      rgba(44, 95, 45, 0.8) 0%,
+      rgba(30, 58, 30, 0.7) 100%
+    ),
+    url('/images/hero-background.jpg') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  margin-top: 60px;
+  position: relative;
+} */
+
+.hero-content {
+  max-width: 800px;
+  padding: 0 2rem;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  font-weight: 700;
+  line-height: 1.2;
+  animation: fadeInUp 1s ease-out;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 1s ease-out 0.3s both;
+  opacity: 0.95;
+}
+
+.cta-button {
+  background: #ffd700;
+  color: #2c5f2d;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeInUp 1s ease-out 0.6s both;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-button:hover {
+  background: #ffed4a;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button:active {
+  transform: translateY(-1px);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+    margin-top: 60px;
+  }
+  
+  .hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    padding: 12px 30px;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1rem;
+  }
+  
+  .cta-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+}
+
