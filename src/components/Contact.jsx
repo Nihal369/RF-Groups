@@ -17,8 +17,8 @@ const Contact = () => {
               </p>
               {/* <p>📍 MATTANNUR - IRIKKUR ROAD</p>
               <p>📍 MATTANNUR - KANNUR - 670702</p> */}
-              <p>📞 1234567890</p>
-              <p>📞 0123456789</p>
+              <p>📞 8078121780</p>
+              <p>📞 8078121781</p>
               <p>✉️ koncold.storage@gmail.com</p>
             </div>
           </div>
